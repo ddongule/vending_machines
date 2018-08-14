@@ -1,6 +1,13 @@
 
 change = 0
 
+class VendingMachine:
+    def __init__(self):
+        self.change = 0
+
+    def run(self):
+        pass
+
 def init():
     global change
     change = 0
