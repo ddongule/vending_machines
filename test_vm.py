@@ -1,4 +1,4 @@
-from vm import run, init
+from vm import run, init, VendingMachine
 
 # def test_insert_coin():
 #     assert "잔액은 0원입니다." ==  run("잔액")
@@ -10,9 +10,10 @@ from vm import run, init
 # def test_insert_coin_and_check():
 #     responst = run("동전 100")
 #     assert "100원을 넣었습니다" == response
+
 def test_initial_change_should_be_zero():
-    init()
-    assert "잔액은 0원입니다." == run("잔액")
+    m = VendingMachine
+    assert "잔액은 0원입니다." == m.run("잔액")
 
 def test_insert_coin_and_check():
     init()
